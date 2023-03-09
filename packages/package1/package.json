@@ -1,0 +1,34 @@
+{
+	"name": "@packages/package1",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"preinstall": "pnpx only-allow pnpm",
+		"clear": "rm -rf ./node_modules",
+		"build": "webpack --progress",
+		"build:analyze": "webpack --progress --analyze"
+	},
+	"author": {
+		"email": "zhangjing1024798@gmail.com",
+		"name": "zhangjing"
+	},
+	"engines": {
+		"node": ">=15"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
+	"dependencies": {
+		"@babel/core": "^7.20.12",
+		"@babel/plugin-transform-typescript": "^7.20.13",
+		"@babel/preset-env": "^7.20.2",
+		"@babel/preset-typescript": "^7.18.6",
+		"@types/webpack": "^5.28.0",
+		"babel-loader": "^9.1.2",
+		"ts-loader": "^9.4.2",
+		"webpack": "^5.75.0",
+		"webpack-bundle-analyzer": "^4.8.0",
+		"webpack-cli": "^5.0.1"
+	}
+}

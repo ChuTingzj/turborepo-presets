@@ -1,0 +1,31 @@
+{
+	"name": "@packages/package2",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"preinstall": "pnpx only-allow pnpm",
+		"clear": "rm -rf ./node_modules",
+		"dev": "vite",
+		"build": "vite build",
+		"build:types": "ts-node scripts/buildTypes.ts",
+		"test": "vitest",
+		"coverage": "vitest run --coverage"
+	},
+	"peerDependencies": {
+		"react": ">=18.2.0",
+		"react-dom": ">=18.2.0"
+	},
+	"devDependencies": {
+		"vite": "^4.0.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"@types/react": "^18.0.27",
+		"@types/react-dom": "^18.0.10",
+		"@vitejs/plugin-react": "^3.1.0",
+		"@unocss/preset-attributify": "^0.50.1",
+		"@unocss/preset-uno": "^0.50.1",
+		"@unocss/reset": "^0.50.1",
+		"@unocss/transformer-directives": "^0.50.1",
+		"unocss": "^0.50.1"
+	}
+}
